@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+ <meta charset="UTF-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <title>Manipulação de Eventos</title> 
+</head> 
+
+<style>
+    
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100%vh;
+        background-color: white;
+    }
+    #centralizar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+    }
+    button{
+        height: 30px;
+        border-radius: 7px;
+        padding: 5px;
+        font-size: 15px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(34, 33, 33, 0.822);
+    }
+    button:hover{
+        background-color: rgb(14, 13, 13);   
+    }
+
+</style>
+
+<body> 
+
+ <div id="centralizar"><!--apenas criei uma div para estilizar , desconsidere  :) -->
+    <p id="meuParagrafo">Texto Original</p> 
+    <button id="meuBotao" onclick="clique()">Alterar Texto</button> 
+ </div>
+
+ <script> 
+    function clique(){
+        document.getElementById('#meuParagrafo');
+        document.querySelector('#meuParagrafo').innerHTML='Texto Alterado !'
+    }
+ </script> 
+</body> 
+</html> 
